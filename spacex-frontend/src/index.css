@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../public/media/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #282c34;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (hover: hover) {
+    .nav-link:hover{
+
+    }
+
+    .heading-button:hover {
+
+    }
+}

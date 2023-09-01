@@ -1,0 +1,127 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+}
+
+.heading {
+    background: linear-gradient(to right, white, orangered);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.heading-text {
+    font-size: 58px;
+    text-transform: uppercase;
+    color: transparent;
+}
+
+.heading-description {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: transparent;
+}
+
+.heading-button {
+    margin-top: 90px;
+    font-size: 14px;
+    color: gray;
+    background-color: transparent;
+    background-image: url("../../public/media/button.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 185px;
+    height: 40px;
+    border: none;
+    transition: scale 0.3s ease-in-out;
+}
+
+.heading-button:hover {
+    cursor: pointer;
+    scale: 120%;
+}
+
+.advantages {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+}
+
+.advantages-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 35%;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.07), transparent);
+    text-align: center;
+}
+
+.advantages-text {
+    opacity: 50%;
+}
+
+.advantages-big-text {
+    font-size: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.advantages-item:hover {
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.5), transparent);
+}
+
+@media (max-width: 768px) {
+    .heading {
+        padding-top: 20px;
+    }
+
+    .hero-container{
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .heading-text {
+        font-size: 32px;
+    }
+
+    .heading-description {
+        font-size: 18px;
+    }
+
+    .advantages {
+        margin-top: 20px;
+        margin-left: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 200px;
+        height: 200px;
+    }
+
+    .heading-button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heading-button {
+        scale: 150%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        justify-content: center;
+    }
+
+    .advantages {
+        margin-left: 20px;
+    }
+}
+
+
